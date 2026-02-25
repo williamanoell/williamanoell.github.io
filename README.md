@@ -109,5 +109,7 @@ Participar de projetos desafiadores
 📬 Contato
 
 📧 williammartins19@outlook.com.com
-🔗 LinkedIn: (seu link)
+
+🔗 LinkedIn: https://www.linkedin.com/in/williamanoell/
+
 🔗 GitHub: https://github.com/williamanoell
