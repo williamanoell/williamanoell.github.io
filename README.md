@@ -24,6 +24,26 @@ Atualmente atuo como Desenvolvedor Full Stack, buscando evoluir continuamente pa
 
 ---
 
+🎓 Formação Acadêmica
+🎓 Bacharelado em Engenharia de Computação
+Instituto Federal do Sul de Minas Gerais 📅 Fev/2015 – Dez/2022
+
+Formação com base sólida em:
+
+Algoritmos e Estruturas de Dados
+
+Engenharia de Software
+
+Arquitetura de Computadores
+
+Banco de Dados
+
+Desenvolvimento de Sistemas
+
+Fundamentos de Hardware e Software
+
+---
+
 🚀 Tecnologias & Ferramentas
 
 🎨 Frontend
