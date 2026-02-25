@@ -1,82 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <title>William Manoel Martins</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>William Manoel | Full Stack .NET Developer</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="sidebar">
-        <img src="assets/foto.jpg" alt="William" class="profile-img">
-        <h2>William Martins</h2>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="nav">
+            <div class="profile">
+                <img src="assets/foto.jpg" alt="Foto de William Manoel">
+                <h1>William</h1>
+            </div>
 
-        <nav>
-            <a href="#about">Sobre</a>
-            <a href="#experience">Experiência</a>
-            <a href="#education">Formação</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contact">Contato</a>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </nav>
-    </div>
+    </header>
 
-    <div class="content">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Olá, eu sou</h2>
+            <h1>William Manoel</h1>
+            <p>Full Stack .NET Developer | Angular & React Native</p>
 
-        <section id="about" class="section">
-            <h1>William Manoel Martins</h1>
-            <h3>Desenvolvedor Frontend & Full Stack</h3>
+            <div class="buttons">
+                <a href="#contato" class="btn primary">Contato</a>
+                <a href="https://www.linkedin.com/in/williamanoell" target="_blank" class="btn outline">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <h2>Sobre mim</h2>
+        <p>
+            Desenvolvedor Full Stack com 3 anos de experiência na criação de aplicações
+            web e mobile escaláveis utilizando Angular, React Native, C# e .NET.
+            Atualmente atuo como Junior Web Developer na Iatrix, desenvolvendo soluções
+            corporativas com ASP.NET Core.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section gray">
+        <h2>Principais Skills</h2>
+
+        <div class="skills-grid">
+            <span>C#</span>
+            <span>ASP.NET Core</span>
+            <span>Angular</span>
+            <span>React Native</span>
+            <span>TypeScript</span>
+            <span>JavaScript</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>SQL Server</span>
+            <span>MySQL</span>
+            <span>Git & GitHub</span>
+            <span>Bootstrap</span>
+        </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="section">
+        <h2>Experiência Profissional</h2>
+
+        <div class="card">
+            <h3>Iatrix</h3>
+            <span>Junior Web Developer • 2025 - Atual</span>
             <p>
-                Desenvolvedor com experiência em Angular, TypeScript,
-                JavaScript e .NET. Construindo aplicações modernas,
-                escaláveis e performáticas.
+                Desenvolvimento e manutenção de aplicações web corporativas utilizando
+                C#, ASP.NET Core e Razor Pages, além de integrações via APIs REST.
             </p>
-        </section>
+        </div>
 
-        <section id="experience" class="section">
-            <h1>Experiência</h1>
+        <div class="card">
+            <h3>Kapibara Softwares</h3>
+            <span>Front-end & Mobile Developer • 2022 - 2024</span>
             <p>
-                Desenvolvedor Full Stack Júnior atuando com C#, Razor,
-                Angular e integração com APIs REST.
+                Desenvolvimento de aplicações web e mobile com Angular e React Native,
+                arquitetura baseada em componentes e otimização de performance.
             </p>
-        </section>
+        </div>
+    </section>
 
-        <section id="education" class="section">
-            <h1>Formação</h1>
-            <p>
-                Bacharel em Engenharia de Computação – IF Sul de Minas
-            </p>
-        </section>
+    <!-- CONTATO -->
+    <section id="contato" class="section gray">
+        <h2>Contato</h2>
 
-        <section id="skills" class="section">
-            <h1>Skills</h1>
-            <p>
-                Angular • TypeScript • JavaScript • .NET • C# • React Native • Git
-            </p>
-        </section>
+        <div class="contact">
+            <p>📍 Poços de Caldas - MG</p>
+            <p>📧 williammartins19@outlook.com</p>
+            <p>📱 (35) 99884-6057</p>
+        </div>
+    </section>
 
-        <section id="projects" class="section">
-            <h1>Projetos</h1>
-            <p>
-                Projeto 1 – você edita depois
-                <br>
-                Projeto 2 – você edita depois
-            </p>
-        </section>
-
-        <section id="contact" class="section">
-            <h1>Contato</h1>
-            <p>
-                Email: williammartins19@outlook.com
-                <br>
-                LinkedIn: linkedin.com/in/williamanoell
-            </p>
-        </section>
-
-    </div>
+    <footer>
+        <p>© 2026 - William Manoel</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
