@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>William Manoel Martins | Portfólio</title>
+    <title>William Manoel Martins | Desenvolvedor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,45 +11,47 @@
 <body>
 
     <header>
+        <div class="logo">WM.</div>
         <nav>
-            <h2>William Martins</h2>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <a href="#sobre">Sobre</a>
+            <a href="#skills">Skills</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
     <section class="hero">
-        <div class="hero-text">
-            <h1>Desenvolvedor Frontend & Full Stack</h1>
+        <div class="hero-content">
+            <h1>William Manoel Martins</h1>
+            <h2>Frontend & Full Stack Developer</h2>
             <p>
-                Especialista em Angular, JavaScript e .NET.
-                Desenvolvendo aplicações modernas, escaláveis e com foco em performance.
+                Desenvolvedor com experiência em Angular, JavaScript e .NET.
+                Construindo aplicações modernas, performáticas e escaláveis.
             </p>
-            <a href="#contato" class="btn">Fale Comigo</a>
+            <div class="buttons">
+                <a href="#projetos" class="btn primary">Ver Projetos</a>
+                <a href="#contato" class="btn outline">Contato</a>
+            </div>
         </div>
 
-        <div class="hero-img">
-            <img src="assets/foto.jpg" alt="William Manoel Martins">
+        <div class="hero-image">
+            <img src="assets/william.jpg" alt="William Manoel Martins">
         </div>
     </section>
 
     <section id="sobre" class="section">
         <h2>Sobre Mim</h2>
         <p>
-            Sou Desenvolvedor Full Stack Júnior com mais de 2 anos de experiência
-            em desenvolvimento web e mobile. Atuo com Angular, TypeScript,
-            JavaScript e .NET, integrando aplicações via APIs REST.
-            Tenho foco em código limpo, boas práticas e experiência do usuário.
+            Desenvolvedor Full Stack Júnior com mais de 2 anos de experiência em
+            aplicações web e mobile. Atuação com Angular, TypeScript, JavaScript,
+            C#/.NET e integração via APIs REST.
+            Foco em código limpo, arquitetura organizada e experiência do usuário.
         </p>
     </section>
 
     <section id="skills" class="section dark">
-        <h2>Tecnologias</h2>
-        <div class="skills-grid">
+        <h2>Skills</h2>
+        <div class="skills">
             <span>Angular</span>
             <span>TypeScript</span>
             <span>JavaScript</span>
@@ -58,7 +60,6 @@
             <span>React Native</span>
             <span>HTML5</span>
             <span>CSS3</span>
-            <span>Bootstrap</span>
             <span>Git</span>
             <span>APIs REST</span>
         </div>
@@ -66,19 +67,18 @@
 
     <section id="projetos" class="section">
         <h2>Projetos</h2>
-
         <div class="cards">
 
             <div class="card">
                 <h3>Pokédex Angular</h3>
-                <p>Aplicação consumindo API com listagem dinâmica e internacionalização.</p>
-                <a href="#" target="_blank">Ver Projeto</a>
+                <p>Aplicação consumindo API com internacionalização e listagem dinâmica.</p>
+                <a href="#">Ver Projeto →</a>
             </div>
 
             <div class="card">
                 <h3>Sistema Full Stack</h3>
-                <p>Aplicação web com Angular e backend .NET integrado via APIs REST.</p>
-                <a href="#" target="_blank">Ver Projeto</a>
+                <p>Aplicação com Angular + .NET integrada via APIs REST.</p>
+                <a href="#">Ver Projeto →</a>
             </div>
 
         </div>
@@ -86,17 +86,18 @@
 
     <section id="contato" class="section dark">
         <h2>Contato</h2>
-        <p>Email: williammartins19@outlook.com</p>
-        <p>
-            <a href="https://linkedin.com/in/williamanoell" target="_blank">LinkedIn</a> |
+        <p>williammartins19@outlook.com</p>
+        <div class="social">
+            <a href="https://linkedin.com/in/williamanoell" target="_blank">LinkedIn</a>
             <a href="https://github.com/williamanoell" target="_blank">GitHub</a>
-        </p>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 William Manoel Martins</p>
+        © 2026 William Manoel Martins
     </footer>
 
+    <script src="index.js"></script>
 </body>
 
 </html>
