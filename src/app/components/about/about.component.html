@@ -1,0 +1,82 @@
+<section id="about">
+  <div class="container">
+    <h2 class="section-title animate-on-scroll">Sobre Mim</h2>
+    <div class="section-divider animate-on-scroll animate-delay-1"></div>
+
+    <div class="about-grid">
+      <!-- Left: Photo + Stats -->
+      <div class="about-left animate-on-scroll animate-delay-1">
+        <div class="about-photo-wrapper">
+          <div class="photo-glow"></div>
+          <img src="assets/foto.jpg" alt="William Manoel" class="about-photo" />
+          <div class="photo-decoration"></div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card glass-card animate-on-scroll" *ngFor="let stat of stats; let i = index" [ngClass]="'animate-delay-' + (i + 2)">
+            <span class="stat-icon">{{ stat.icon }}</span>
+            <span class="stat-value gradient-text">{{ stat.value }}</span>
+            <span class="stat-label">{{ stat.label }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="about-right">
+        <h3 class="about-heading animate-on-scroll animate-delay-2">
+          Desenvolvedor apaixonado por criar soluções que fazem a diferença
+        </h3>
+
+        <p class="about-text animate-on-scroll animate-delay-3">
+          Sou William Manoel, desenvolvedor Full Stack com mais de 3 anos de experiência
+          construindo aplicações web e mobile de alta qualidade. Minha jornada começou na
+          Engenharia de Computação e evoluiu para uma especialização prática em Angular,
+          TypeScript, React Native e o ecossistema .NET.
+        </p>
+
+        <p class="about-text animate-on-scroll animate-delay-4">
+          Atualmente na <strong>Iatrix LTDA</strong>, desenvolvo e mantenho aplicações
+          corporativas com C#, ASP.NET Core e Entity Framework, integrando sistemas
+          através de REST APIs robustas. Anteriormente na <strong>Kapibara Softwares</strong>,
+          liderei o desenvolvimento de interfaces modernas com Angular Material e aplicações
+          mobile com React Native.
+        </p>
+
+        <p class="about-text animate-on-scroll animate-delay-5">
+          Sou movido por desafios técnicos e pela busca constante de código limpo,
+          escalável e de fácil manutenção. Sempre alinhado às boas práticas de
+          desenvolvimento e metodologias ágeis.
+        </p>
+
+        <div class="highlight-chips animate-on-scroll animate-delay-5">
+          <span
+            class="badge"
+            *ngFor="let h of highlights"
+            [class.badge-cyan]="h.color === 'cyan'"
+          >
+            {{ h.label }}
+          </span>
+        </div>
+
+        <div class="about-cta animate-on-scroll animate-delay-5">
+          <a
+            href="https://www.linkedin.com/in/williamanoell/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            Ver LinkedIn
+          </a>
+          <a
+            href="https://github.com/williamanoell"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+          >
+            Ver GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

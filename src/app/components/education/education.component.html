@@ -1,0 +1,61 @@
+<section id="education">
+  <div class="container">
+    <h2 class="section-title animate-on-scroll">Formação</h2>
+    <p class="section-subtitle animate-on-scroll animate-delay-1">
+      Base acadêmica que fundamenta minha atuação profissional
+    </p>
+    <div class="section-divider animate-on-scroll animate-delay-1"></div>
+
+    <div class="education-grid">
+      <div
+        class="edu-card glass-card animate-on-scroll"
+        *ngFor="let edu of educations; let i = index"
+        [ngClass]="'animate-delay-' + (i + 2)"
+      >
+        <div class="edu-icon-wrap">
+          <span class="edu-icon">{{ edu.icon }}</span>
+          <span class="edu-type">{{ edu.type }}</span>
+        </div>
+
+        <div class="edu-content">
+          <h3 class="edu-institution gradient-text">{{ edu.institution }}</h3>
+          <h4 class="edu-degree">{{ edu.degree }}</h4>
+
+          <div class="edu-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>{{ edu.period }}</span>
+          </div>
+
+          <p class="edu-description">{{ edu.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Languages section -->
+    <div class="languages-section animate-on-scroll animate-delay-4">
+      <h3 class="languages-title">Idiomas</h3>
+      <div class="languages-grid">
+        <div class="language-card glass-card">
+          <span class="lang-flag">🇧🇷</span>
+          <div>
+            <div class="lang-name">Português</div>
+            <div class="lang-level">Nativo</div>
+          </div>
+          <div class="lang-bar">
+            <div class="lang-bar-fill" style="width: 100%"></div>
+          </div>
+        </div>
+        <div class="language-card glass-card">
+          <span class="lang-flag">🇺🇸</span>
+          <div>
+            <div class="lang-name">Inglês</div>
+            <div class="lang-level">Intermediário</div>
+          </div>
+          <div class="lang-bar">
+            <div class="lang-bar-fill" style="width: 60%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

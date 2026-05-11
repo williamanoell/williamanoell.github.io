@@ -1,0 +1,61 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="container nav-container">
+    <!-- Logo -->
+    <button class="logo" (click)="scrollTo('hero')" aria-label="Ir para o início">
+      <span class="logo-text">WM</span>
+    </button>
+
+    <!-- Desktop Nav Links -->
+    <ul class="nav-links">
+      <li *ngFor="let link of navLinks">
+        <button
+          class="nav-link"
+          [class.active]="activeSection === link.target"
+          (click)="scrollTo(link.target)"
+        >
+          {{ link.label }}
+        </button>
+      </li>
+    </ul>
+
+    <!-- Contact CTA (desktop) -->
+    <a
+      href="mailto:williammartins19@outlook.com"
+      class="btn btn-primary nav-cta"
+    >
+      Contato
+    </a>
+
+    <!-- Hamburger (mobile) -->
+    <button
+      class="hamburger"
+      [class.open]="isMobileMenuOpen"
+      (click)="toggleMobileMenu()"
+      aria-label="Menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" [class.open]="isMobileMenuOpen">
+    <ul>
+      <li *ngFor="let link of navLinks">
+        <button
+          class="mobile-link"
+          [class.active]="activeSection === link.target"
+          (click)="scrollTo(link.target)"
+        >
+          {{ link.label }}
+        </button>
+      </li>
+      <li>
+        <a href="mailto:williammartins19@outlook.com" class="btn btn-primary mobile-cta">
+          Contato
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
